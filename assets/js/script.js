@@ -45,15 +45,7 @@ var saveTasks = function() {
   localStorage.setItem("tasks", JSON.stringify(tasks));
 };
 
-$(".list-group").on("click", "p", function() {
-  var text = $(this)
-  .text()
-  .trim();
-  var textInput = $("<textarea>")
-    $(this).replacedWith(textInput)
-  .addClass("form-control")
-  .val(text);
-});
+
 
 
 // modal was triggered
